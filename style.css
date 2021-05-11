@@ -7,24 +7,21 @@ body
     display: grid;
    
 }
-@media all and (max-width: 900px) 
+@media all and (max-width: 487px) 
 {
     body
     {
-        overflow-x: hidden;
+        width:0%;  
+     
+        
+        
     }
 }
 
 
 
 
- @media all and (max-width: 900px) 
-{
-     body
-    {   
-        margin-left: 0px;
-    }
-}
+
 
 
 #bloc_page
@@ -36,13 +33,19 @@ body
     
 }
 
-@media all and (max-width: 900px) 
+@media all and (max-width: 487px) 
 {
     #bloc_page
     {   
-        width: 100%;
+        width: 90%;
+        height: auto;
         display: flex;
         flex-direction: column;
+        padding-left: 1px;
+        margin-left: 1px;
+
+        
+        
      
     }
 }
@@ -144,10 +147,10 @@ div button i
 
 .filtres
 {
-    width: 160%;
-    height: auto;
     margin-top: 20px;
     margin-left: 10px;
+    width: 55em;
+
 
 }
 
@@ -227,7 +230,7 @@ span i
     
 }
 
-@media all and (max-width: 900px) 
+@media all and (max-width: 487px) 
 {
     header
     {  
@@ -235,14 +238,18 @@ span i
         display: flex;
         flex-direction: column;
         text-align: left;
-        margin-top: -80px;
-        margin-left: 30px;
+        margin-top: -100px;
+        padding-left: 10px;
+        width: 90%;
+        height: auto;
+        border-top: 4px solid whitesmoke;
+
     }
     
    
     header h1
     {
-       width: 70%;
+       width: 100%;
        display: flex;
        text-align:left;
        font-size: 1.4em;
@@ -254,7 +261,7 @@ span i
     }
     div .carte
     {
-        width: 70%;
+        width: 110%;
         padding-top: 20px;
     }
 
@@ -284,6 +291,7 @@ span i
         flex-direction:column;
         margin-top: 30px;
         margin-left: -10px;
+        width: 20em;
     
 
     }
@@ -323,6 +331,8 @@ nav
 {
     padding-top: 0px;
     margin-top: -20px;
+    padding-left: -10px;
+    margin-left: 10px;
 
 }
 
@@ -330,7 +340,7 @@ nav
 #logo img
 {   
    
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 30px;
 }
 
@@ -341,6 +351,8 @@ nav ul
     font-size: 0.80em;
     list-style-type: none;
     margin: 60px;
+    margin-left: 1px;
+    padding-left: -10px;
 
 
 }
@@ -381,10 +393,18 @@ nav a:hover
 
 
 
-@media all and (max-width: 900px) 
+@media all and (max-width: 487px) 
 {
 
     
+
+    nav 
+    {
+        width: 110%;
+        display: flex;
+        flex-direction: row;
+        padding-left: 0px;
+    }
     #logo img
     {
         margin-top: 30px;
@@ -396,7 +416,7 @@ nav a:hover
     
     nav ul 
     {
-        width: 100%;
+        width: 99%;
         height: 20px;
         display:flex;
         flex-direction:row;
@@ -404,7 +424,6 @@ nav a:hover
         text-align: right;
         padding-bottom: 0px;
         margin-bottom: 100px;
-        border-bottom: 4px solid whitesmoke;
         
     }
 
@@ -413,11 +432,13 @@ nav a:hover
 
     nav li
     {
+  
         font-size: 1.2em;
         padding: 30px;
         padding-left: 30px;
         margin-bottom: -30px;
         text-align: right;
+        margin-left: 50px;
     }
 
     li a 
@@ -428,15 +449,10 @@ nav a:hover
     }
      div .inscrire
     {
-        padding-left: 360px;
-        padding-bottom: 30px;
-      
+        padding-bottom: 35px;
+        width: 90%;
     }
-    .inscrire
-    {
-        margin-top: 1px;
-        padding-right: 20px;
-    }
+ 
     
    
          
@@ -707,7 +723,7 @@ h1
 
 
 
-@media all and (max-width: 900px) 
+@media all and (max-width: 487px) 
 {
     main
     {
@@ -719,7 +735,7 @@ h1
     }
     #hebergements
     {
-        width: 60%;
+        width: 90%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -728,6 +744,7 @@ h1
         align-content: center;
         justify-content: center;
         background-color: white;
+        padding-left: 10px;
         
         
     }
@@ -766,24 +783,25 @@ h1
     
     #populaires
     {
-        width: 78%;
+        width: 105%;
         height: auto;
         display: flex;
         flex-direction: column;
-        margin-left: 2px;
+        margin-left: 0px;
         border-radius: 0px;
+        padding-left: 0px;
     }
     #populaires h1
     {
         font-size: 1.5em;
-        padding-left: 15px;
+        padding-left: 40px;
     }
 
     .carre
     {
-        width: 80%;
-        height: 130px;
-        margin-left: 20px;
+        width: 90%;
+        height: 140px;
+        margin-left: 30px;
         
 
 
@@ -792,7 +810,7 @@ h1
     {
       
         width: 120px ;
-        height: 120px;
+        height: 130px;
         margin-top: -10px;
     }
     #populaires p
@@ -807,13 +825,13 @@ h1
          text-align: left;
          font-size: 1em;
          padding-right: 20px;
-         padding-top: 1px;
+         padding-top: 0px;
 
    
     }
     #populaires span i
     {
-        padding-right: 80px;
+        padding-right: 40px;
     }
     
 }
@@ -980,19 +998,23 @@ h4
     
 }
 
-@media all and (max-width: 900px) 
+@media all and (max-width: 487px) 
 {
     article
     {
-        width: 50%;
+        width: 70%;
         height: auto;
         display: flex;
         flex-direction: column;
+        padding-left: 1px;
+        padding-top: 1px;
+
     }
 
     article h3
     {
         font-size: 1.6em;
+        padding-left: 10px;
     }
     article h4
     {
@@ -1129,12 +1151,12 @@ li
 }
 
 
-@media all and (max-width: 900px) 
+@media all and (max-width: 487px) 
 
 {
     footer
     { 
-        width: 100%;
+        width: 112%;
         height: auto;
         display: flex;
         flex-direction: column;
