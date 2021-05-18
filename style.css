@@ -12,15 +12,8 @@ body
     body
     {
         width:0%;  
-     
-        
-        
     }
 }
-
-
-
-
 #bloc_page
 {
     width: auto;
@@ -40,10 +33,6 @@ body
         flex-direction: column;
         padding-left: 1px;
         margin-left: 1px;
-
-        
-        
-     
     }
 }
 
@@ -114,7 +103,7 @@ div button i
     font-size: 1em;
 }
 
-.carte label 
+.carte .recherche
 {
     
     background-color: #0065fc;
@@ -133,7 +122,8 @@ div button i
 }
 
 
-.carte  #loupe
+
+.carte  .loupe
 {
     display: none;
 }
@@ -235,10 +225,10 @@ span i
         display: flex;
         flex-direction: column;
         text-align: left;
-        margin-top: -100px;
+        margin-top: -10%;
         padding-left: 10px;
         margin-left: 10px;
-        width: 98%;
+        width: 90%;
         height: auto;
         border-top: 4px solid whitesmoke;
 
@@ -263,12 +253,12 @@ span i
         padding-top: 20px;
     }
 
-    .carte  .search
+    .carte  .recherche
     {
     display: none;
     } 
     
-    .carte #loupe
+    .carte  .loupe    
     {
         display:initial;
         background-color: #0065fc;
@@ -327,37 +317,44 @@ span i
 
 nav
 {
+    width: auto;
     padding-top: 0px;
-    margin-top: -20px;
+    margin-top: 0px;
     padding-left: 0px;
     margin-left: 10px;
-
 }
 
 
 #logo img
 {   
    
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 30px;
 }
 
+
+
+
 nav ul
 {   
-    float:right;
-    display:flex;
+    float: right;
+    display: flex;
     font-size: 0.80em;
     list-style-type: none;
-    margin: 60px;
-    margin-left: 1px;
-    padding-left: 0px;
+    margin: 5%;
+    padding-right: 15%;
+    margin-top: -38px;
+
 
 
 }
 
+
 nav li
 {
-    margin-left: 75px;
+    margin-left: 1%;
+    padding-left: 1%;
+    margin-right: 30%;
     
     
     
@@ -370,14 +367,16 @@ nav a
     padding-bottom: 10px;
 }
 
-
-div .inscrire
+.inscrire
 {
-    font-size: 1.2em;
+    float:right;
+    font-size: 0.90em;
     color: #0065FC;
-    font-weight: 700;
-    padding-left: 60px;
-    padding-top: 5px;
+    font-weight: 500;
+    padding-right: 0%;
+    margin-right: -33%;
+    margin-top: -2.6%;
+
 }
 
 nav a:hover
@@ -398,30 +397,27 @@ nav a:hover
 
     nav 
     {
-        width: 110%;
+        width: 50%;
+        height: 60px;
         display: flex;
         flex-direction: row;
-        padding-left: 0px;
+        padding-left: 0%;
+        padding-bottom: 20%;
+        padding-top: 1%;
     }
     #logo img
     {
-        margin-top: 30px;
-        font-size: large;
-        height: 50px;
+        margin-top: 1px;
 
     }
    
     
     nav ul 
     {
-        width: 99%;
-        height: 20px;
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap-reverse;
-        text-align: right;
-        padding-bottom: 0px;
-        margin-bottom: 100px;
+        width: 70%;
+        height: 10px;
+        padding-top: 42%;
+        margin-left: -70%;
         
     }
 
@@ -430,13 +426,11 @@ nav a:hover
 
     nav li
     {
-  
+        
         font-size: 1.2em;
         padding: 30px;
-        padding-left: 30px;
-        margin-bottom: -30px;
-        text-align: right;
-        margin-left: 50px;
+     
+
     }
 
     li a 
@@ -447,8 +441,11 @@ nav a:hover
     }
      div .inscrire
     {
-        padding-bottom: 35px;
-        width: 90%;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 10%;
+        margin-right: -100px;
+        padding-left: 40%;
     }
  
     
@@ -601,19 +598,41 @@ h1
     padding-left: 10px;
 }
 
-#hebergements i
+#hebergements  i
 {
-    color: #0065FC;
     font-size: 9px;
+    color: blue;
     
 }
 
+/* style="color: #F2F2F2"> */
 
-#hebergements h6
+#hebergements  #star1  
+{
+    color: #F2F2F2;
+}
+#hebergements   #star2 
+{
+    color: #F2F2F2;
+}
+#hebergements  #star3  
+{
+    color: #F2F2F2;
+}
+#hebergements   #star4 
+{
+    color: #F2F2F2;
+}
+#hebergements  #star5  
+{
+    color: #F2F2F2;
+}
+
+#hebergements h3
 {
     display: inline-table;
     padding: 10px;
-    font-size: 1em;
+    font-size: 0.8em;
     padding-top: 1px;
 }
 
@@ -708,8 +727,14 @@ h1
     padding-top: 12px;
 
 }
-
-
+#populaires  #star_1  
+{
+    color: #F2F2F2;
+}
+#populaires    #star_2
+{
+    color: #F2F2F2;
+}
 
 
 
@@ -745,7 +770,7 @@ h1
         padding-left: 0px;
 
     }
-    #hebergements   aside img  
+    #hebergements section img  
     {
         width: 350px;
         height: 120px;
@@ -843,7 +868,7 @@ article
 }
 
 
-h3
+h2
 {
     text-align: left;
     font-size: 1.3em;
@@ -876,7 +901,7 @@ h3
     border-radius: 20px 20px 0px 0px;
 }
 
-h4
+h3
 {
     padding-left: 15px;
     font-size: 0.9em;
@@ -1001,12 +1026,12 @@ h4
 
     }
 
-    article h3
+    article h2
     {
         font-size: 1.6em;
         padding-left: 10px;
     }
-    article h4
+    article h3
     {
         padding-left: 15px;
         font-size: 0.9em;
@@ -1115,7 +1140,7 @@ footer
 div .fin
 {
   
-    
+
         margin: auto;
         font-size: 0.90em;
         margin-left: 1px;
