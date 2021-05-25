@@ -7,11 +7,12 @@ body
     display: grid;
    
 }
+
 @media all and (max-width: 487px) 
 {
     body
     {
-        width:0%;  
+        width:50%;  
     }
 }
 #bloc_page
@@ -226,9 +227,9 @@ span i
         flex-direction: column;
         text-align: left;
         margin-top: -10%;
-        padding-left: 10px;
-        margin-left: 10px;
-        width: 90%;
+        margin-right: 0%;
+        margin-left: 0%;
+        width: 96%;
         height: auto;
         border-top: 4px solid whitesmoke;
 
@@ -457,19 +458,10 @@ nav a:hover
     padding: 0.1em 0 0.1em 0;
     border-top:none;
     }
-
-
- 
 }
 
 
-
-
-
 /*main*/
-
-
-
 
 /*section hébergements*/
 
@@ -868,7 +860,7 @@ article
 }
 
 
-h2
+ h2
 {
     text-align: left;
     font-size: 1.3em;
@@ -1026,12 +1018,12 @@ h3
 
     }
 
-    article h2
+    article h1
     {
-        font-size: 1.6em;
+        font-size: 1.5em;
         padding-left: 10px;
     }
-    article h3
+    article h2
     {
         padding-left: 15px;
         font-size: 0.9em;
@@ -1177,10 +1169,9 @@ li
         flex-direction: column;
     }
     div .fin
-{
+     {
     
     font-size: 1em;
 
-}
-   
+    }
 }
