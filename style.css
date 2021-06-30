@@ -1,6 +1,13 @@
 body {
   font-family: Roboto, sans-serif;
-  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
 }
 
 /*header*/
@@ -231,6 +238,11 @@ h2 {
           box-shadow: 0 5px 15px 0 #c3c3c3;
 }
 
+.resto a {
+  text-decoration: none;
+  color: black;
+}
+
 .resto :hover {
   color: #9356dc;
 }
@@ -264,10 +276,15 @@ footer {
   color: white;
 }
 
-footer .logo-footer {
+footer .logo-footer .small {
   width: 50%;
   padding-left: 40px;
   padding-top: 30px;
+  color: #fff;
+}
+
+footer .logo-footer .big {
+  display: none;
 }
 
 footer .icons {
@@ -276,6 +293,15 @@ footer .icons {
 
 footer li {
   padding: 2px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  border-bottom: #fff solid 2px;
 }
 
 footer i {
@@ -295,7 +321,7 @@ footer .contact {
   margin-top: 1px;
 }
 
-@media all and (min-width: 600px) and (max-width: 1200px) {
+@media all and (min-width: 825px) {
   body {
     font-family: Roboto, sans-serif;
     margin: 0px;
@@ -303,7 +329,7 @@ footer .contact {
 }
 
 /*header*/
-@media all and (min-width: 600px) and (max-width: 1200px) {
+@media all and (min-width: 825px) {
   header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -338,21 +364,48 @@ footer .contact {
   }
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 825px) {
   section .geo {
-    width: 40%;
-    margin-left: 25%;
-    padding-left: 10%;
+    width: 20%;
+    margin-left: 38%;
+    padding-left: 5%;
     margin-top: -2%;
   }
   section .geo .icon {
-    margin-left: -20%;
+    margin-left: -10%;
+  }
+  section .geo input {
+    width: 100%;
+    padding-left: -20%;
   }
   section .intro {
-    width: 80%;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 20%;
+  }
+  section .intro button {
+    width: 40%;
+    margin-left: 30%;
   }
   section .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 5%;
+  }
+  .titre-fonction h2 {
+    font-size: 40px;
+    padding-left: 37%;
+    padding-top: 5%;
+  }
+  section .fonctionnement button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -362,8 +415,68 @@ footer .contact {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    font-size: 150%;
+  }
+  section .fonctionnement .text {
+    padding-left: 10px;
+  }
+}
+
+@media all and (min-width: 825px) {
+  .restaurants {
+    width: 70%;
+    height: 70%;
+    display: table-caption;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .resto {
+    width: 40%;
+    height: 20%;
+    margin-left: 0%;
+    padding-top: 10px;
+    font-size: 150%;
+  }
+  #r3, #r4 {
+    margin-top: 30px;
+  }
+  .titre-resto h2 {
+    font-size: 40px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    margin-left: -10%;
+  }
+}
+
+@media all and (min-width: 825px) {
+  footer {
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 140%;
+  }
+  .logo-footer {
+    margin-left: 0;
+    color: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */
