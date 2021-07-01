@@ -69,8 +69,8 @@ main {
 
 main .page-resto img {
   width: 100%;
-  height: 300px;
-  margin-top: -50px;
+  height: 180px;
+  margin-top: 10px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -379,6 +379,7 @@ footer .contact {
   }
   header .big {
     display: initial;
+    padding-top: 1px;
   }
   main {
     display: -webkit-box;
@@ -394,6 +395,19 @@ footer .contact {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  main
+.page-resto img {
+    width: 100%;
+    height: 300px;
+    margin-top: -50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .title-resto {
+    font-family: Shrikhand, sans-serif;
+    font-weight: normal;
+    padding: 20px 0 20px 20px;
   }
 }
 
