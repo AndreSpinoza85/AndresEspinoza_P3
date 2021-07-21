@@ -256,20 +256,22 @@ section .intro button:hover {
       justify-content: space-around;
   background: #f6f6f6;
   margin-top: 30px;
+  padding-top: 100px;
   padding-bottom: 50px;
 }
 
-h2 {
-  font-size: 20px;
+.titre-resto h2 {
+  font-size: 30px;
   padding-left: 20px;
   padding-top: 20px;
+  margin-bottom: -100px;
 }
 
 .resto {
   width: 90%;
   background: #fff;
   margin-left: 20px;
-  border-radius: 25px;
+  border-radius: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -400,6 +402,13 @@ footer .contact {
   margin-top: 1px;
 }
 
+/*header #pages*/
+article .page-resto img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*section resto-page */
 main .pages {
   display: -webkit-box;
@@ -421,11 +430,10 @@ main main .pages {
   background: #f6f6f6;
 }
 
-main .page-resto img {
-  width: 100%;
-  margin-top: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+main .resto-page {
+  background: #f6f6f6;
+  border-radius: 45px;
+  margin-top: -50px;
 }
 
 main .title-resto {
@@ -436,20 +444,34 @@ main .title-resto {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: Shrikhand, sans-serif;
   font-weight: 100;
   padding: 20px 0 20px 20px;
 }
 
 main .title-resto i {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 25px;
-  margin-right: 10px;
+  padding-right: 40px;
+}
+
+main .entrees h2 {
+  font-size: 15px;
+  font-weight: 100;
+  border-bottom: 3px solid #99e2d0;
+  display: block;
+  padding-top: 3px;
+  margin-top: -30px;
+  padding-bottom: 5px;
+  width: 40px;
 }
 
 main .options {
-  width: 80%;
-  height: 80px;
+  width: auto;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,26 +479,63 @@ main .options {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 30px;
-  padding-left: 20px;
-  padding-top: 1px;
-  border: 2px solid whitesmoke;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  border: 2px solid #fff;
   border-radius: 15px;
-  background: whitesmoke;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
+          box-shadow: 0 5px 15px 0 #c3c3c3;
 }
 
-main .options button {
-  width: 40px;
-  margin-left: 280px;
-  margin-top: -50px;
-  background: whitesmoke;
-  border-color: whitesmoke;
+main .options h3 {
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 main .options p {
-  width: 60%;
-  margin-top: -10px;
-  margin-left: 0px;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+main .options span {
+  font-weight: bolder;
+  margin-left: 90%;
+  margin-top: -35px;
+}
+
+main #plats h2 {
+  margin-top: 20px;
+}
+
+main .button {
+  text-align: center;
+  margin-left: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border-radius: 30px 30px 30px 30px;
+  border: transparent;
+  color: #ffff;
+  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
+          box-shadow: 0 5px 15px 0 #c3c3c3;
+  padding: 20px;
+  margin: 85px;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  cursor: pointer;
+}
+
+main .button:hover {
+  background: #7d4db8;
+  font-weight: bolder;
+  color: #ffff;
 }
 
 /* responsive... 
@@ -575,7 +634,7 @@ main .options p {
     section .fonctionnement
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 15px;
@@ -587,8 +646,7 @@ main .options p {
     }
     .titre-fonction h2
     {
-        font-size: 40px;
-        padding-left: 37%;
+        font-size: 30px;
         padding-top: 5%;
     }
     section .fonctionnement button 
@@ -596,7 +654,8 @@ main .options p {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-        font-size: 30px;
+        font-size: 20px;
+        width: 90%;
     }
     section .fonctionnement .text 
     {
@@ -607,18 +666,18 @@ main .options p {
 {
     .restaurants
     {
-      width: 70%; 
-      display:table-caption;
+      width: 90%; 
       display: flex;
       flex-direction:row;
-      flex-wrap:wrap;
-      padding: 30px;
+      justify-content: space-between;
+      padding: 50px;
       padding-bottom: 50px;
       padding-top: 50px;
+      margin-top: 100px;
     }
     .resto
     {
-        width: 40%;
+        width: 20%;
         margin-left: 0;
         padding-top: 0;
         font-size: 20px;
@@ -629,10 +688,9 @@ main .options p {
     }
     .titre-resto h2
     {
-        font-size: 40px;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        margin-left: -10%;
+        font-size: 30px;
+        margin-left: -400px;
+        margin-bottom: -140px;
     }
 
 }
@@ -647,11 +705,16 @@ main .options p {
         justify-content: center;
         font-size: 20px;
     }
-    .logo-footer
+    .title-footer a h2
     {
-        margin-left: 0;
+        font-family: Shrikhand, sans-serif;
         color: #fff;
+        font-size: 55px;
+        margin-left: 25px;
+        margin-top: 5px;
+        margin-bottom: 1px;   
     }
+   
       
 }
   
