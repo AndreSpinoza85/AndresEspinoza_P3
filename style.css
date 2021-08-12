@@ -1,3 +1,9 @@
+
+  /* Code pour l'animation */
+  @keyframes exemple {
+  	from { background-color: #9356dc;}
+	  to { background-color: #fff; }
+}
 body {
     font-family: Roboto, sans-serif;
     display: -webkit-box;
@@ -8,7 +14,11 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-  }
+    animation-name: exemple; /* Ici, l'animation "exemple" déclarée dans le @keyframe est lié à la div */
+    animation-duration: 2s;
+
+   
+}
   
   /*header*/
   header {
@@ -215,8 +225,9 @@ body {
     font-weight: 300;
     width: 25px;
     height: 25px;
+    margin-top: -3px;
     margin-left: -40px;
-    line-height: 2;
+    line-height: 25px;
     position: absolute;
     text-align: center;
     padding: 3px;
@@ -267,6 +278,8 @@ body {
   .title-restaurant{
       display: block;
   }
+
+  
   
   .resto {
     width: 90%;
@@ -277,6 +290,7 @@ body {
     position: relative;
     -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
             box-shadow: 0 5px 15px 0 #c3c3c3;
+            
   }
   
   .resto a {
@@ -334,6 +348,9 @@ body {
   .carte-info:hover {
     color: #9356dc;
   }
+  .carte :hover {
+    background: #9356dc;
+  }
   .resto i:hover {
     color:  #9356dc;
     font-weight: bolder;
@@ -390,9 +407,12 @@ body {
   /*header #pages*/
   article .page-resto img {
     width: 100%;
+    max-height: 350px ;
     -o-object-fit: cover;
        object-fit: cover;
   }
+
+
   
   /*section resto-page */
   main .pages {
@@ -405,6 +425,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+            align-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -414,11 +435,21 @@ body {
   main main .pages {
     background: #f6f6f6;
   }
+     /* Code pour l'animation */
+     @keyframes exemple {
+      from { background-color: #9356dc;}
+      to { background-color: #fff; }
+  }
   
   main .resto-page {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background: #f6f6f6;
     border-radius: 45px;
     margin-top: -50px;
+    animation-name: exemple; /* Ici, l'animation "exemple" déclarée dans le @keyframe est lié à la div */
+    animation-duration: 2s;
   }
   
   main .title-resto {
@@ -439,22 +470,27 @@ body {
   
   main .title-resto i {
     font-size: 20px;
+    font-weight: lighter;
     margin-top: 25px;
     padding-right: 40px;
   }
+  main .title-resto i:hover {
+    color:  #9356dc;
+    font-weight: bold;
+  }
   
-  main .cards h2 {
+  main .entrees h2 {
     font-size: 15px;
     font-weight: 100;
     border-bottom: 3px solid #99e2d0;
     display: block;
     padding-top: 3px;
-    margin-top: -30px;
+    margin-top: 0px;
     margin-left: 40px;
     padding-bottom: 5px;
     width: 40px;
   }
-  
+ 
   main .options {
     width: auto;
     height: auto;
@@ -469,15 +505,25 @@ body {
         flex-wrap: nowrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 20px;
+    margin: 10px;
     padding-bottom: 10px;
     padding-top: 0px;
     border: 2px solid #fff;
     border-radius: 15px;
     background: #fff;
+    cursor: pointer;
     -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
             box-shadow: 0 5px 15px 0 #c3c3c3;
+            transition:  background 2s; /* La transition */
+            animation-direction: alternate; 
   }
+  main .options:hover {
+    background-color: #9356dc;
+    transition-timing-function: linear;
+
+  }
+ 
+
   
   main .options h3 {
     margin-left: 10px;
@@ -495,11 +541,11 @@ body {
     margin-top: -35px;
   }
   
-  main #plats h2 {
-    margin-top: 20px;
-  }
+  
   
   main .button {
+    display: flex;
+    justify-content: center;
     text-align: center;
     background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
     background: linear-gradient(#ff79da, #9356dc);
@@ -696,7 +742,7 @@ body {
 @media all and (min-width: 1000px)
 {
         body{        
-          max-width: 1400px;
+          max-width: 1600px;
           margin: auto;  
         }
 }
@@ -713,24 +759,51 @@ body {
  
   @media all and (min-width: 1000px)
   {
-       main .cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-     }
+    main section .cards-1 {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+   main section .cards-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+   main section .cards-3 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
        main .options{
-         width: 320px;
+         width: 350px;
          height: 70px;
          margin-top: 50px;
+         margin-bottom: 50px;
        }
        main .button{
          max-width: 200px;
-         margin-left: 40%;
+         margin-left: 43%;
        }
        
       
   } 
+
+  /* Code pour l'animation, qui passera d'un arrière-plan rouge à un arrière-plan jaune 
+@keyframes exemple {
+	from { background-color: red; }
+	to { background-color: yellow; }
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation-name: exemple; /* Ici, l'animation "exemple" déclarée dans le @keyframe est lié à la div 
+	animation-duration: 4s;/* L'animation dure 4 secondes */
+} 
 
   
   /*
