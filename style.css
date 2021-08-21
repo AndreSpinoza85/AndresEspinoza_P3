@@ -514,23 +514,26 @@ body {
   
   .animation_survol {
     position: absolute;
-    top: 0;
+    top: 60;
     right: -60px;
     bottom: 0;
     width: 60px;
+    height: 100px;
     text-align: center;
     line-height: 62px;
     font-size: 20px;
-    background-color: #FFF;
+    background-color: #fff;
     transition: all 0.4s ease;
   }
   
-  main .options .animation_survol i {
+  main .options  i {
     transition: all 0.4s ease;
-    background-color:  rgb(214, 214, 214);;
-    border-radius: 50%;
-    padding: 10px;
-    padding-top: 40px;
+    background-color:  rgb(214, 214, 214);
+    width: 60px;
+    height: 100px;
+    padding: 0px;
+    padding-top: 50px;
+    color: #fff;
   }
   
   main .options:hover .animation_survol {
@@ -538,7 +541,10 @@ body {
   }
   
   main .options:hover .animation_survol i {
+    transform:perspective();
+    /*
     transform: rotate(360deg);
+    */
   }
   
 
