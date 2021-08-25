@@ -1,12 +1,7 @@
 body {
   font-family: Roboto, sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0;
   animation-name: exemple; /* Ici, l'animation "exemple" déclarée dans le @keyframe est lié à la div */
   animation-duration: 2s;
@@ -16,15 +11,10 @@ body {
 
 /*header*/
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 header .back-btn {
@@ -36,12 +26,9 @@ header .back-btn {
 }
 
 header .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: right;
   padding-bottom: 15px;
   padding-top: 25px;
@@ -57,16 +44,10 @@ header .big {
 
 /*section .intro*/
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   color: #000;
 }
@@ -75,17 +56,12 @@ section .geo {
   height: 50px;
   background-color: #e9e9e9;
   color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   align-items: center;
   padding: 10px;
-  -webkit-box-shadow: 0 5px 15px 0 #494545;
-          box-shadow: 0 5px 15px 0 #494545;
+  box-shadow: 0 5px 15px 0 #494545;
 }
 
 section .geo .icon {
@@ -107,31 +83,15 @@ section .input .search {
   font-weight: 600;
 }
 
-section .input ::-webkit-input-placeholder {
-  color: black;
-}
-
-section .input :-ms-input-placeholder {
-  color: black;
-}
-
-section .input ::-ms-input-placeholder {
-  color: black;
-}
 
 section .input ::placeholder {
   color: black;
 }
 
 section .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background: #ebf5f2;
   padding-bottom: 50px;
   padding: 20px 20px 20px 20px;
@@ -155,14 +115,11 @@ section .intro a {
   text-align: center;
   font-size: 20px;
   padding: 18px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px 30px 30px 30px;
   color: #ffff;
   border: transparent;
-  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
           box-shadow: 0 5px 15px 0 #c3c3c3;
   text-decoration: none;
 }
@@ -175,39 +132,25 @@ section .intro a:hover {
 
 .fonctionnement  {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 
 .fonctionnement span button {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: left;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 15px;
   font-weight: bold;
   padding: 25px;
-  background-color: #f6f6f6;
   border-radius: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 50px;
   border: #f6f6f6;
-  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
-          box-shadow: 0 5px 15px 0 #c3c3c3;
+  box-shadow: 0 5px 15px 0 #c3c3c3;
   cursor: pointer;
 }
 
@@ -229,7 +172,8 @@ section .intro a:hover {
 
 .fonctionnement span i {
   font-size: 22px;
-  margin-left: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
   color: #796a6a;
 }
 
@@ -252,15 +196,9 @@ section .intro a:hover {
 
 /* section 2 */
 .restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
   background: #f6f6f6;
   margin-top: 30px;
   width: auto;
@@ -282,8 +220,7 @@ section .intro a:hover {
   border-radius: 20px;
   cursor: pointer;
   position: relative;
-  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
-          box-shadow: 0 5px 15px 0 #c3c3c3;
+  box-shadow: 0 5px 15px 0 #c3c3c3;
           
 }
 
@@ -298,8 +235,7 @@ section .intro a:hover {
 
 .img-resto {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .new {
@@ -317,8 +253,7 @@ section .intro a:hover {
   width: 100%;
   height: 170px;
   border-radius: 20px 20px 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .resto h3 {
@@ -402,27 +337,17 @@ footer .contact {
 article .page-resto img {
   width: 100%;
   max-height: 350px ;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 
 
 /*section resto-page */
 main .pages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
+          display: flex;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
           align-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
           flex-direction: column;
 }
 
@@ -443,16 +368,9 @@ main .resto-page {
 }
 
 main .title-resto {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
   font-family: Shrikhand, sans-serif;
   font-weight: 100;
   padding: 20px 0 20px 20px;
@@ -483,27 +401,18 @@ main .entrees h2 {
 
 main .options {
   width: auto;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 60px;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   margin: 10px;
   padding-bottom: 10px;
   padding-top: 0px;
-  border: 2px solid #fff;
   border-radius: 15px;
-  background: #fff;
+  background:#fff;
   cursor: pointer;
-  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
-          box-shadow: 0 5px 15px 0 #c3c3c3;
+  box-shadow: 0 5px 15px 0 #c3c3c3;
          
 }
 
@@ -606,15 +515,12 @@ main .button {
   display: flex;
   justify-content: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px 30px 30px 30px;
   border: transparent;
   color: #ffff;
-  -webkit-box-shadow: 0 5px 15px 0 #c3c3c3;
-          box-shadow: 0 5px 15px 0 #c3c3c3;
+  box-shadow: 0 5px 15px 0 #c3c3c3;
   padding: 20px;
   margin: 85px;
   margin-top: 50px;
@@ -849,61 +755,3 @@ main .button:hover {
      
     
 } 
-
-/* Code pour l'animation, qui passera d'un arrière-plan rouge à un arrière-plan jaune 
-@keyframes exemple {
-from { background-color: red; }
-to { background-color: yellow; }
-}
-
-div {
-width: 100px;
-height: 100px;
-background-color: red;
-animation-name: exemple; /* Ici, l'animation "exemple" déclarée dans le @keyframe est lié à la div 
-animation-duration: 4s;/* L'animation dure 4 secondes */
-
-
-
-/*
-line-height:40px;
-*/
-/*# sourceMappingURL=style.css.map */
-
-/* animations 
-main .options {
-  position: relative;
-  overflow: hidden;
-}
-
-.animation_survol {
-  position: absolute;
-  top: 0;
-  right: -60px;
-  bottom: 0;
-  width: 60px;
-  text-align: center;
-  line-height: 62px;
-  font-size: 30px;
-  background-color: #FFF;
-  transition: all 0.4s ease;
-}
-
-main .options .animation_survol i {
-  transition: all 0.4s ease;
-  background-color: green;
-  border-radius: 50%;
-  padding: 10px;
-}
-
-main .options:hover .animation_survol {
-  right: 0;
-}
-
-main .options:hover .animation_survol i {
-  transform: rotate(360deg);
-}
-
-
-
-
