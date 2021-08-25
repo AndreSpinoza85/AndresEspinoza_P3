@@ -392,10 +392,10 @@ main .entrees h2 {
   font-weight: 100;
   border-bottom: 3px solid #99e2d0;
   display: block;
-  padding-top: 3px;
-  margin-top: 0px;
+  padding-top: 20px;
+  margin-top: 10px;
   margin-left: 40px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   width: 40px;
 }
 
